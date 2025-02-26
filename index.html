@@ -24,14 +24,6 @@
         .nav-item:hover { color: #c8e6c9; }
         .section { display: none; padding: 20px; }
         .active { display: block; }
-        .alert-icon {
-    position: absolute;
-    top: 18px;
-    right: 60px; /* Ajuste para que no esté tan pegado */
-    font-size: 22px;
-    color: #FFC107; /* Un amarillo dorado más acorde */
-}
-
         iframe { width: 100%; height: 400px; border-radius: 10px; margin-top: 15px; }
     </style>
     <script>
@@ -47,9 +39,7 @@
             <div class="logo-container">
                 <img src="logo.png" alt="Logo" class="logo">
             </div>
-            <div class="menu"><i class="fas fa-bars"></i></div>
-            <span class="alert-icon"><i class="fas fa-bell"></i></span>
-
+            <div class="menu"><i class="fas fa-bell">  <i class="fas fa-bars"></i></div>
         </div>
         <div class="content">
             <div id="home" class="section active">
@@ -72,21 +62,25 @@
                     <a class="button" onclick="toggleSection('monitoreo')">Leer más</a>
                 </div>
             </div>
-            
-            <div id="monitoreo" class="section">
-                <div class="card">
-                    <h2>Monitoreo con Tecnología Avanzada</h2>
-                    <p>Nuestros drones están equipados con cámaras de alta precisión y sensores ambientales que permiten identificar zonas de riesgo y realizar estudios ecológicos.</p>
-                    <p>Los datos recolectados se analizan en tiempo real, ayudando a investigadores y comunidades locales en la protección del ecosistema.</p>
-                    <a class="button" onclick="toggleSection('home')">Volver</a>
-                </div>
+            <div id="concientizacion" class="section">
+                <h2>Concientización y Economía</h2>
+                <p>La concientización es clave para la preservación de la Amazonía. Promovemos programas educativos en comunidades locales y apoyamos iniciativas de emprendimiento sostenible.</p>
+                <p>Ejemplos de acciones incluyen talleres de reciclaje, capacitación en turismo ecológico y apoyo a artesanos locales.</p>
+                <a class="button" onclick="toggleSection('home')">Volver</a>
             </div>
-            
             <div id="mapa" class="section">
                 <div class="card">
                     <h2>Mapa Interactivo de la Amazonía</h2>
                     <p>Nuestro mapa utiliza información satelital y datos de drones para mostrar en tiempo real las amenazas a la biodiversidad.</p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154862.680438263!2d-65.000000!3d-3.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDAwJzAwLjAiUyA2NcKwMDAnMDAuMCJX!5e0!3m2!1ses!2spe!4v1634832029097!5m2!1ses!2spe" allowfullscreen="" loading="lazy"></iframe>
+                    <a class="button" onclick="toggleSection('home')">Volver</a>
+                </div>
+            </div>
+            <div id="monitoreo" class="section">
+                <div class="card">
+                    <h2>Monitoreo con Tecnología Avanzada</h2>
+                    <p>Nuestros drones están equipados con cámaras de alta precisión y sensores ambientales que permiten identificar zonas de riesgo y realizar estudios ecológicos.</p>
+                    <p>Los datos recolectados se analizan en tiempo real, ayudando a investigadores y comunidades locales en la protección del ecosistema.</p>
                     <a class="button" onclick="toggleSection('home')">Volver</a>
                 </div>
             </div>
