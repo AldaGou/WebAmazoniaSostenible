@@ -10,7 +10,7 @@
         body { font-family: 'Arial', sans-serif; background-color: #e8f5e9; display: flex; flex-direction: column; height: 100vh; }
         .app-container { flex-grow: 1; display: flex; flex-direction: column; }
         .header { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; background: #065143; color: white; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
-        .logo-container { display: flex; align-items: center; gap: 20px; background-color: #f5f5dc; padding: 10px 20px; border-radius: 8px; }
+        .logo-container { display: flex; align-items: center; gap: 30px; background-color: #f5f5dc; padding: 10px 25px; border-radius: 8px; }
         .logo { height: 40px; }
         .menu { font-size: 20px; cursor: pointer; }
         .content { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; padding: 20px; flex-grow: 1; }
@@ -38,7 +38,6 @@
         <div class="header">
             <div class="logo-container">
                 <img src="logo.png" alt="Logo" class="logo">
-                <span>Amazonía Sostenible</span>
             </div>
             <div class="menu"><i class="fas fa-bars"></i></div>
         </div>
@@ -47,30 +46,30 @@
                 <div class="card">
                     <img src="drones.jpg" alt="Drones de Monitoreo">
                     <h2>Drones de Monitoreo</h2>
-                    <p>Recopilación de datos en tiempo real sobre deforestación.</p>
+                    <p>Los drones equipados con sensores avanzados permiten un monitoreo continuo de la Amazonía, detectando incendios, deforestación y cambios ambientales en tiempo real.</p>
                     <a class="button" onclick="toggleSection('monitoreo')">Ver más</a>
                 </div>
                 <div class="card">
                     <img src="mapa.jpg" alt="Mapa de Alertas">
                     <h2>Mapa de Alertas</h2>
-                    <p>Monitoreo interactivo de zonas afectadas por deforestación.</p>
+                    <p>Un mapa interactivo que muestra las áreas afectadas por deforestación, permitiendo una rápida acción para su conservación.</p>
                     <a class="button" onclick="toggleSection('mapa')">Ver más</a>
                 </div>
             </div>
             
             <div id="monitoreo" class="section">
                 <div class="card">
-                    <h2>Monitoreo Ambiental</h2>
-                    <p>Visualización de datos en tiempo real con drones equipados con sensores.</p>
-                    <p>Equipados con cámaras y sensores, estos drones patrullan las áreas de mayor riesgo, recolectando datos en tiempo real sobre deforestación.</p>
+                    <h2>Monitoreo con Drones</h2>
+                    <p>Utilizamos tecnología de punta para vigilar el ecosistema amazónico. Nuestros drones están equipados con cámaras térmicas e infrarrojas para detectar anomalías ambientales.</p>
+                    <p>Los datos recolectados permiten a científicos y autoridades tomar medidas precisas para la conservación y restauración de la selva.</p>
                     <a class="button" onclick="toggleSection('home')">Volver</a>
                 </div>
             </div>
             
             <div id="mapa" class="section">
                 <div class="card">
-                    <h2>Mapa Interactivo</h2>
-                    <p>Ubicación en tiempo real de áreas afectadas.</p>
+                    <h2>Mapa de Deforestación</h2>
+                    <p>A través de nuestro sistema de monitoreo, ofrecemos un mapa interactivo actualizado con alertas sobre deforestación, incendios y cambios en la vegetación.</p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154862.680438263!2d-65.000000!3d-3.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDAwJzAwLjAiUyA2NcKwMDAnMDAuMCJX!5e0!3m2!1ses!2spe!4v1634832029097!5m2!1ses!2spe" allowfullscreen="" loading="lazy"></iframe>
                     <a class="button" onclick="toggleSection('home')">Volver</a>
                 </div>
